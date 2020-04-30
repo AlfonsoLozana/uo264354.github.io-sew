@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora RPN</title>
+<link rel="stylesheet" href="CalculadoraRPN.css"/>
+<script src="CalculadoraRPN.js"></script>
+</head>
+<body>
+    <h1>Calculadora científica</h1>
+    
+    <form action="calulator">
+        <input type='text' id='display4' disabled/>
+        <input type='text' id='display3' disabled/>
+        <input type='text' id='display2' disabled/>
+        <input type='text' id='display1' disabled/>
+        <input type='text' id='display0' disabled/>
+        <br>
+
+        <input type="button" value= "sin" onclick="calculadoraRpn.operacion('sen')"/>
+        <input type="button" value= "cos" onclick="calculadoraRpn.operacion('cos')"/>
+        <input type="button" value= "tan" onclick="calculadoraRpn.operacion('tan')"/>
+        <input type="button" value= "log" onclick="calculadoraRpn.operacion('log')"/>
+
+        <br>
+
+        <input type="button" value= "sqrt" onclick="calculadoraRpn.operacion('sqrt')"/>
+        <input type="button" value= "1/x" onclick="calculadoraRpn.operacion('1/x')"/>
+        <input type="button" value= "a^b" onclick="calculadoraRpn.operacion('a^b')"/>
+        <input type="button" value= "+-" onclick="calculadoraRpn.operacion('+-')"/>
+
+        <br>
+
+        <input type="button" value= "pop" onclick="calculadoraRpn.pop()"/>
+        <input type="button" value= "Clear" onclick="calculadoraRpn.removeAll()"/>
+        <input type="button" value= "C" onclick="calculadoraRpn.remove()"/>
+        <input type="button" class = "basicOperator" value= "/" onclick="calculadoraRpn.operacion('/')" />
+
+        <br>
+
+        <input type="button" class = "number" value= "7" onclick="calculadoraRpn.anadirNumero('7')" />
+        <input type="button" class = "number" value= "8" onclick="calculadoraRpn.anadirNumero('8')" />
+        <input type="button" class = "number" value= "9" onclick="calculadoraRpn.anadirNumero('9')" />
+        <input type="button" class = "basicOperator" value= "*" onclick="calculadoraRpn.operacion('*')" />
+
+        <br>
+
+        <input type="button" class = "number" value= "4" onclick="calculadoraRpn.anadirNumero('4')" />
+        <input type="button" class = "number" value= "5" onclick="calculadoraRpn.anadirNumero('5')" />
+        <input type="button" class = "number" value= "6" onclick="calculadoraRpn.anadirNumero('6')" />
+        <input type="button" class = "basicOperator" value= "-" onclick="calculadoraRpn.operacion('-')" />
+
+        <br>
+
+        <input type="button" class = "number" value= "1" onclick="calculadoraRpn.anadirNumero('1')" />
+        <input type="button" class = "number" value= "2" onclick="calculadoraRpn.anadirNumero('2')" />
+        <input type="button" class = "number" value= "3" onclick="calculadoraRpn.anadirNumero('3')" />
+        <input type="button" class = "basicOperator" value= "+" onclick="calculadoraRpn.operacion('+')" />
+
+        <br>
+        <input type="button" value= "Pi" onclick="calculadoraRpn.operacion('pi')" />
+        <input type="button" class = "number" value= "0" onclick="calculadoraRpn.anadirNumero('0')" />
+        <input type="button" value= "." onclick="calculadoraRpn.anadirPunto()" />
+        <input type="button" value= "Enter" onclick="calculadoraRpn.push('0')" />
+        <br>
+    </form>
+</body>
+</html>

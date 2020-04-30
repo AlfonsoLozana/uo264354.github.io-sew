@@ -1,0 +1,80 @@
+form {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    border: solid 2px black;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: auto;
+    background: gray;
+    border-radius: 40px;
+  }
+  input[type=text] {
+      width: 70%;
+      padding: 8px 32px;
+      font-size: 20px;
+      margin: 0px 0;
+      text-align: left;
+      color: #333;
+      background: #ccc;
+      text-align : right;
+  }
+
+  #display4 {
+    width: 70%;
+    padding: 8px 32px;
+    font-size: 20px;
+    margin: 20px 0px 0px 0px;
+    text-align: left;
+    color: #333;
+    background: #ccc;
+    border-radius: 20px 20px 0px 0px;
+    text-align : right;
+}
+
+#display0 {
+    width: 70%;
+    padding: 8px 32px;
+    font-size: 20px;
+    margin:  0px 0px 20px 0px ;
+    text-align: left;
+    color: #333;
+    background: #ccc;
+    border-radius: 0px 0px 20px 20px ;
+    text-align : right;
+}
+  input[type=button] {
+      background-color: rgb(126, 30, 30);
+      border: none;
+      color: white;
+      padding: 12px 0px;
+      font-size: 16px;
+      min-width: 21%;
+      text-decoration: none;
+      margin: 3px 3px;
+      cursor: pointer;
+      border-radius: 15px;
+    }
+
+    input[class=number] {
+        background-color: black;
+    }
+
+    input[class=equal] {
+        background-color:rgb(70, 50, 41);
+    }
+
+    input[class=basicOperator] {
+        background-color: burlywood;
+        color: black;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    body{
+        background-color: antiquewhite;
+    }
+  
+

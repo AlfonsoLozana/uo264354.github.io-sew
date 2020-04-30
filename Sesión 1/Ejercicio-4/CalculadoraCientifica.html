@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora científica</title>
+<link rel="stylesheet" href="CalculadoraCientifica.css"/>
+<script src="CalculadoraCientifica.js"></script>
+</head>
+<body>
+    <h1>Calculadora científica</h1>
+    
+    <form action="calulator">
+        <input type='text' id='resultado' disabled/>
+        <br>
+
+        <input type="button" value="MC" onclick="calculadoraCientifica.clearMemory()"/>
+        <input type="button" value= "MR" onclick="calculadoraCientifica.showMemory()" />
+        <input type="button" value= "M-" onclick="calculadoraCientifica.removeMemory()" />
+        <input type="button" value= "M+" onclick="calculadoraCientifica.addMemory()" />
+        <input type="button" value= "MS" onclick="calculadoraCientifica.saveMemory()"/>
+        <br>
+
+        <input type="button" value= "x^2" onclick="calculadoraCientifica.addDisplay('**2')"/>
+        <input type="button" value= "x^y" onclick="calculadoraCientifica.addDisplay('**')"/>
+        <input type="button" value= "sin" onclick="calculadoraCientifica.trigonometria('sen')"/>
+        <input type="button" value= "cos" onclick="calculadoraCientifica.trigonometria('cos')"/>
+        <input type="button" value= "tan" onclick="calculadoraCientifica.trigonometria('tan')"/>
+        <br>
+
+        <input type="button" value= "&#8730" onclick="calculadoraCientifica.calcularRaiz()"/>
+        <input type="button" value= "10^x" onclick="calculadoraCientifica.addDisplay('10**')"/>
+        <input type="button" value= "log" onclick="calculadoraCientifica.log()"/>
+        <input type="button" value= "Exp" onclick="calculadoraCientifica.addDisplay('*10**')"/>
+        <input type="button" value= "Mod" onclick="calculadoraCientifica.addDisplay('%')"/>
+        <br>
+        
+        <input type="button" value="F-E" onclick="calculadoraCientifica.notacionCientifica()"/>
+        <input type="button" value= "CE" onclick="calculadoraCientifica.limpiarCE()"/>
+        <input type="button" value= "C" onclick="calculadoraCientifica.resetText()" />
+        <input type="button" class = "equal" value= "&#x232b" onclick="calculadoraCientifica.eliminarUltimoCaracter()" />
+        <input type="button" class = "basicOperator" value= "/" onclick="calculadoraCientifica.addDisplay('/')" />
+        <br>
+        
+        <input type="button" value= "&#928" onclick="calculadoraCientifica.pi()" />
+        <input type="button" class = "number" value= "7" onclick="calculadoraCientifica.addNumber('7')" />
+        <input type="button" class = "number" value= "8" onclick="calculadoraCientifica.addNumber('8')" />
+        <input type="button" class = "number" value= "9" onclick="calculadoraCientifica.addNumber('9')" />
+        <input type="button" class = "basicOperator" value= "*" onclick="calculadoraCientifica.addDisplay('*')" />
+        <br>
+
+        <input type="button" value= "n!" onclick="calculadoraCientifica.calcularFactorial()" />
+        <input type="button" class = "number" value= "4" onclick="calculadoraCientifica.addNumber('4')" />
+        <input type="button" class = "number" value= "5" onclick="calculadoraCientifica.addNumber('5')" />
+        <input type="button" class = "number" value= "6" onclick="calculadoraCientifica.addNumber('6')" />
+        <input type="button" class = "basicOperator" value= "-" onclick="calculadoraCientifica.addDisplay('-')" />
+        <br>
+
+        <input type="button" value= "+-" onclick="calculadoraCientifica.invertirSigno()" />
+        <input type="button" class = "number" value= "1" onclick="calculadoraCientifica.addNumber('1')" />
+        <input type="button" class = "number" value= "2" onclick="calculadoraCientifica.addNumber('2')" />
+        <input type="button" class = "number" value= "3" onclick="calculadoraCientifica.addNumber('3')" />
+        <input type="button" class = "basicOperator" value= "+" onclick="calculadoraCientifica.addDisplay('+')" />
+        <br>
+
+        <input type="button" value= "(" onclick="calculadoraCientifica.addParenthesis('(')" />
+        <input type="button" value= ")" onclick="calculadoraCientifica.addParenthesis(')')" />
+        <input type="button" class = "number" value= "0" onclick="calculadoraCientifica.addNumber('0')" />
+        <input type="button" value= "." onclick="calculadoraCientifica.addPunto('.')" />
+        <input type="button" class = "equal" value= "=" onclick="calculadoraCientifica.calcular()" />
+        <br>
+    </form>
+</body>
+</html>

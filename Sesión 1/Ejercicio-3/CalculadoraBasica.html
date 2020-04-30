@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora básica</title>
+    <link rel="stylesheet" href="CalculadoraBasica.css" />
+    <script src="CalculadoraBasica.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora básica</h1>
+    <form name="calculator">
+        <input type="text" id="resultado" disabled />
+        <br>
+        <input type="button" value="mrc" onclick="calculadora.showMemory()" />
+        <input type="button" value="m-" onclick="calculadora.subtractionMemory()" />
+        <input type="button" value="m+" onclick="calculadora.addMemory()" />
+        <input type="button" class = "operator" value="/" onclick="calculadora.addOperator('/')" />
+        <br>
+
+        <input type="button" class = "number" value="7" onclick="calculadora.addNumber('7')" />
+        <input type="button" class = "number" value="8" onclick="calculadora.addNumber('8')" />
+        <input type="button" class = "number" value="9" onclick="calculadora.addNumber('9')" />
+        <input type="button" class = "operator" value="x" onclick="calculadora.addOperator('*')" />
+        <br>
+
+        <input type="button" class = "number" value="4" onclick="calculadora.addNumber('4')" />
+        <input type="button" class = "number" value="5" onclick="calculadora.addNumber('5')" />
+        <input type="button" class = "number" value="6" onclick="calculadora.addNumber('6')" />
+        <input type="button" class = "operator" value="-" onclick="calculadora.addOperator('-')" />
+        <br>
+
+        <input type="button" class = "number" value="1" onclick="calculadora.addNumber('1')" />
+        <input type="button" class = "number" value="2" onclick="calculadora.addNumber('2')" />
+        <input type="button" class = "number" value="3" onclick="calculadora.addNumber('3')" />
+        <input type="button" class = "operator" value="+" onclick="calculadora.addOperator('+')" />
+        <br>
+
+        <input type="button" class = "number" value="0" onclick="calculadora.addNumber('0')" />
+        <input type="button" value="." onclick="calculadora.addPunto('.')" />
+        <input type="button" value="C" onclick="calculadora.resetText()" />
+        <input type="button" class = "equal" value="=" onclick="calculadora.calcular()" />
+        </form>
+</body>
+
+</html>
